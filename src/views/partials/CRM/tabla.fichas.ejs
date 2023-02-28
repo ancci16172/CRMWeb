@@ -1,0 +1,69 @@
+<h3 class="blue-title">
+    Fichas
+</h3>
+<table class="tabla-datos tabla-fichas">
+    <colgroup>
+        <col span="2" class="bg-meses">
+        <col span="1" class="zona-border bg-meses">
+        <col span="1" class="bg-vta">
+        <col span="1" class="bg-ant">
+        <col span="6" class="bg-meses">
+        <col span="1" class="bg-vta">
+        <col span="1" class="bg-meses">
+        <col span="1" class="bg-vta">
+        <col span="1" class="bg-cuota">
+        <col span="1" class="bg-meses">
+        <col span="6" class="bg-adicional_datos">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Ficha</th>
+            <th>Zona</th>
+            <th>VTA</th>
+            <th>ANT</th>
+            <% for (var i = 6; i !== 0 ; i--) { %>
+                <th>
+                    <%= months[vigente-i <0? 12 + vigente-i:vigente-i]%>
+                </th>
+            <%}%>
+            <th>Sal.Ant</th>
+            <th><%= months[vigente] %></th>
+            <th>Sal.Act</th>
+            <th>Cuota</th>
+            <th class="bg-valor_unitario">V.U</th>
+            <th class="bg-adicional">Ven</th>
+            <th class="bg-adicional">VenCob</th>
+            <th class="bg-adicional">Vencidas</th>
+            <th class="bg-adicional">Pagas</th>
+            <th class="bg-adicional">Totales</th>
+            <th class="bg-adicional">Atrasos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td class="zona">0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>

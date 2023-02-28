@@ -1,0 +1,69 @@
+<h3 class="blue-title">
+    Prestamos
+</h3>
+<table class="tabla-datos tabla-prestamos">
+    <colgroup >
+        <col span="2" class="bg-blue">
+        <col span="1" class="bg-blue zona-border">
+        <col span="1" class="bg-saldo">
+        <col span="7" class="">
+        <col span="1" class="bg-saldo">
+        <col span="1" class="">
+        <col span="1" class="bg-saldo">
+        <col span="1" class="bg-saldo">
+        <col span="1" class="">
+        <col span="6" class="">
+    </colgroup>
+    <thead>
+        <tr class="prestamos-titles">
+            <th>Fecha</th>
+            <th>Prest</th>
+            <th>Zona</th>
+            <th>Capital</th>
+            <th>ANT</th>
+            <% for (var i = 6; i !== 0 ; i--) { %>
+                <th>
+                    <%= months[vigente-i <0? 12 + vigente-i:vigente-i]%>
+                </th>
+            <%}%>
+            <th class="bg-lightblue">Sal.Ant</th>
+            <th class="bg-lightblue"><%= months[vigente] %></th>
+            <th class="bg-lightblue">Sal.Act</th>
+            <th>Cuota</th>
+            <th>Cuo</th>
+            <th class="bg-fecha">Venc</th>
+            <th class="bg-fecha">C de fecha</th>
+            <th class="bg-fecha">P Fecha</th>
+            <th class="bg-deuda">Serv</th>
+            <th class="bg-deuda">Mora</th>
+            <th class="bg-deuda">Deuda cuo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td class="zona">0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    
+    </tbody>
+</table>
